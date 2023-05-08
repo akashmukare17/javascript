@@ -22,9 +22,8 @@ var address = "Barshi, Solapur";
 console.log(address);
 
 var pincode ="413401";
-console.log(pincode);
-
-var gender ="Male";
+console.log(pincode); 
+var gender= 'Male'; 
 console.log(gender);
 
 var isMarried = "No"

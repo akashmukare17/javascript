@@ -44,3 +44,29 @@ lastName.trimEnd();
 var firstName = "Gajanan";
 var result = firstName.length;
 console.log("Total char available in firstName is:",result );
+
+var greet = "Good Morning";
+var includeResult = greet.includes("ing");
+console.log("is ing string available inside:", includeResult);
+
+var searchresult = greet.search("Mor");
+console.log("is mor string available inside:", searchresult);
+
+var sliceResult = greet.slice(0, 3);
+console.log("slice result is:", sliceResult);
+
+var subStringResult = greet.substring(4, 6);
+console.log("subString Result is :", subStringResult);
+
+var greet = "Good Morning mate, How are you";
+var splitResult = greet.split(" ");
+console.log("Spilt result:", splitResult);
+console.log("total number of words:", splitResult.length);
+
+var splitResult = greet.split(",");
+console.log("Spilt result:", splitResult);
+console.log("total number of words:", splitResult.length);
+
+var splitResult = greet.split("");
+console.log("Spilt result:", splitResult);
+console.log("total number of words:", splitResult.length);

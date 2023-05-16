@@ -1,0 +1,25 @@
+console.log("**********Ternary Operator Assign2 **********");
+console.log("---------------------------------------------");
+console.log("1) Male Marriage Eligibilty");
+console.log("");
+function maleMarrigeEligibility (gender, age, boyName){
+    var result = (gender=="Male" && age>=21)? `Hey ${boyName} you are eligible for Marriage`:`${boyName} you are not eligible for Marriage`;
+    return result;
+}
+var boy1 = maleMarrigeEligibility("Male",25,"Billgates");
+console.log(boy1);
+var boy2 = maleMarrigeEligibility("Male",17,"Stew Jobs");
+console.log(boy2);
+console.log("---------------------------------------------");
+
+console.log("2) Female Marriage Eligibilty");
+console.log("");
+function femaleMarriageEligibility (gender,age,girlName){
+    var result = (gender=="Female" && age>=18)?`Hey ${girlName} you are eligible for Marriage`:`${girlName} you are not eligible for Marriage`;
+    return result;
+}
+var girl1 = femaleMarriageEligibility ("Female",16,"Jenifer");
+console.log(girl1);
+var girl2 = femaleMarriageEligibility ("Female",27,"Malinda Gates");
+console.log(girl2);
+console.log("---------------------------------------------");

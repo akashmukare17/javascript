@@ -88,3 +88,75 @@ var arrayOfRollNumber = [67, 56, 78, 90, 60, 90, 40];
 arrayOfRollNumber.splice(2, 2, 111, 22, 333);
 console.log(arrayOfRollNumber );
 
+
+var array = ["Anil", "Siya", "Sunil", "Jenny"];
+array.splice(2, 0, "Ram");
+console.log(array);
+
+array.splice(1, 1);//removing siya from index 1 from array array
+console.log(array);
+
+array.splice(1, 2, "Bill", "Stew")// adding two element by removing two element
+console.log(array);
+
+array.splice(1, 0, "Bill", "Stew")// adding two element by without removing element
+console.log(array);
+
+console.log(array.slice(array.length-2));//last two element
+
+
+var arrayName = ["Anil", "Siya", "Ram", "Sunil", "Jenny"];
+// let firstElement = arrayName[0];
+// console.log(firstElement);
+for (let index = 0; index < arrayName.length; index++) {
+    let element = arrayName[index];
+    // console.log(element);
+    if (element.startsWith("S")) {
+        console.log(element);
+    }
+}
+
+console.log("");
+console.log("====Traversing Array====");
+
+var arrayName = ["Anil", "Siya", "Ram", "Sunil", "Jenny"];
+for (let index = 0; index < arrayName.length; index++) {
+    const element = arrayName[index];
+    console.log(element);
+}
+
+console.log("---------------------For in loop-------------------");
+for (const index in arrayName) {
+    console.log(arrayName[index]);
+}
+
+console.log("---------------------For of loop-------------------");
+for (const element of arrayName) {
+    console.log(element);
+}
+
+console.log(`//WAP to get even index element`);
+var arrayName = ["Anil", "Siya", "Ram", "Sunil", "Jenny"];
+for (const index in arrayName) {
+        if (index%2==0) {
+          console.log(`${arrayName[index]}`);  
+        }
+}
+
+console.log(`-----------Join---------------`);
+let names = arrayName.join(", ");
+console.log(names);
+
+const arrayBoys = ["Anil", "Ram", "Sunil"];
+let arrayGirl = ["Siya", "Jenny"];
+
+let combineArray = arrayBoys + arrayGirl;
+console.log(combineArray);
+
+let concatArray = arrayBoys.concat(arrayGirl);
+console.log(concatArray);
+
+console.log(`---------Resize an array----------`);
+var arrayName = ["Anil", "Siya", "Ram", "Sunil", "Jenny"];
+arrayName.length = 3;
+console.log(arrayName);
